@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+{% block main %}
+
+ <div class="input-field">
+        <div class="input-content-section">
+            <h2>Styled Select Option Field in Form</h2>
+            <label for="name">Name: </label>
+            <input type="text" id="fname" placeholder="Your name.." required>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="youremail@example.com" required>
+            <label for="age">Age: </label>
+            <select id="age" required>
+                <div class="drop-down">
+                <option value="" disabled selected>---Choose Age From Here---</option>
+                <option value="0-17">Below 18 years</option>
+                <option value="18-25">Between 18-25 years</option>
+                <option value="25-40">Between 25-40 years</option>
+                <option value="40-60">Between 40-60 years</option>
+                <option value="60+">Above 60 years</option>
+            </div>
+            </select>
+            <label for="password">Password </label>
+            <input type="email" id="password" placeholder="123ab@c" required>
+            <input type="submit" class="submit-button" value="Submit">
+
+        </div>
+    </div>
+
+{% endblock %}
